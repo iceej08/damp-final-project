@@ -127,7 +127,7 @@
 </div>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menubf1.png" class="card-img-top rounded" alt="Avocado Egg Toast Salad" />
           <div class="card-body">
             <h5 class="card-title">Avocado Egg Toast Salad</h5>
@@ -137,7 +137,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menubf2.png" class="card-img-top rounded" alt="Mixed Veggie Power Bowl" />
           <div class="card-body">
             <h5 class="card-title">Mixed Veggie Power Bowl</h5>
@@ -147,7 +147,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menulunch1.png" class="card-img-top rounded" alt="Plant Based Veggie Stir-Fry" />
           <div class="card-body">
             <h5 class="card-title">Plant Based Veggie Stir-Fry</h5>
@@ -157,7 +157,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menulunch2.png" class="card-img-top rounded" alt="Chicken Sweet Potato Box" />
           <div class="card-body">
             <h5 class="card-title">Chicken Sweet Potato Box</h5>
@@ -167,7 +167,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menudin1.png" class="card-img-top rounded" alt="Bibimbap Bowl Delight" />
           <div class="card-body">
             <h5 class="card-title">Bibimbap Bowl Delight</h5>
@@ -177,7 +177,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="card p-2">
+        <div class="card rounded-5">
           <img src="images/menudin2.png" class="card-img-top rounded" alt="Stir-Fried Veggie Mix" />
           <div class="card-body">
             <h5 class="card-title">Stir-Fried Veggie Mix</h5>
