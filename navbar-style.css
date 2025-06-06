@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    display: flex;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    override-colors: hidd
+    ;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffffff;
+}#sidebar{
+    width: 5rem;
+    min-width: 5rem;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    flex-direction: column;
+    background-color: #3F7D58;
+    border-radius: 0 0.7rem 0.7rem 0;
+}
+#sidebar.expand{
+    width: 13rem;
+    min-width: 13rem;
+}
+#toggle-btn{
+    background-color: transparent !important;
+    cursor: pointer;
+    border: 0;
+    padding: 1.7rem 1.5rem;
+}
+
+#toggle-btn i{
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.5s;
+}
+.sidebar-logo{
+    margin: auto 0;
+}
+.sidebar-logo a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#sidebar:not(.expand) .sidebar-logo, 
+#sidebar:not(.expand) a.sidebar-link span{
+    display: none;
+}
+
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link{
+    padding: 0.625rem 1.6rem;
+    color: #fff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 0.2rem solid transparent;
+    /* transition: background-color 0.3s; */
+}
+
+.sidebar-link i{
+    font-size: 1.2rem;
+    margin-right: .75rem;
+}
+.sidebar-link span{
+    display: inline-block;
+    text-decoration: underline;
+    transition: all;
+}
+#sidebar.expand .sidebar-link span {
+  text-decoration: none;
+}
+a.sidebar-link:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+    border-left: 0.2rem solid#B8DFC8;
+}
+.sidebar-link:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.sidebar-link.active {
+    background-color: #B8DFC8;
+    color: #3F7D58;
+    font-weight: 600;
+}
+#sidebar:not(.expand) .sidebar-item:hover {
+    display: block;
+    margin: 5rem;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+#sidebar:not(.expand) a.sidebar-link span {
+  display: none;
+}
+#sidebar:not(.expand) .sidebar-link:hover {
+  background-color: transparent;
+}
+
+/* Footer logout */
+.sidebar-footer {
+    padding: auto 1.5rem;
+    margin-top: auto;
+    display: block;
+}
