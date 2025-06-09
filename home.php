@@ -78,12 +78,13 @@
 
     .feature-title {
         font-family: 'Cormorant Infant', serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .feature-text {
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
+        text-align:justify;
     }
 
     iframe {
@@ -103,7 +104,7 @@
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="profile.php" class="sidebar-link">
                     <i class="material-icons">person</i>
                     <span class="material-symbols">Profile</span>
                 </a>
@@ -115,9 +116,9 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="article.html" class="sidebar-link">
                     <i class="material-icons">description</i>
-                    <span class="material-symbols">Description</span>
+                    <span class="material-symbols">Article</span>
                 </a>
             </li>
             <li class="sidebar-item">
@@ -140,7 +141,7 @@
             </li>
         </ul>
         <div class="sidebar-footer mt-5">
-            <a href="#" class="sidebar-link">
+            <a href="landing.html" class="sidebar-link">
                 <i class="material-icons">logout</i>
                 <span class="material-symbols">logout</span>
             </a>
@@ -153,8 +154,10 @@
                 <img src="images/menu_atas.png" alt="Tofu Avocado Power Bowl" class="img-fluid rounded" />
             </div>
             <div class="col-md-6 text-center">
-                <a class="feature-title" href="recipe_sample.html" style="color:black; text-decoration:none;">Tofu Avocado Power Bowl</a>
-                <p class="feature-text fs-5">
+                <h1 class="feature-title">
+                    <a href="recipe_sample.html" style="color:black; text-decoration:none;">Tofu Avocado Power Bowl</a>
+                </h1>
+                <p class="feature-text">
                 This Tofu Avocado Power Bowl is a vibrant and nutritious meal packed with plant-based protein.
                 It features crispy tofu, creamy avocado, and a mix of fresh vegetables like edamame, kale, and carrots.
                 A savory peanut-ginger dressing ties everything together with rich, tangy flavor.
