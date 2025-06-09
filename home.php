@@ -102,7 +102,7 @@
         <img src="images/menu_atas.png" alt="Tofu Avocado Power Bowl" class="img-fluid rounded" />
       </div>
       <div class="col-md-6 text-center">
-        <h4 class="feature-title">Tofu Avocado Power Bowl</h4>
+        <a class="feature-title" href="recipe_sample.html" style="color:black; text-decoration:none;">Tofu Avocado Power Bowl</a>
         <p class="feature-text">
           This Tofu Avocado Power Bowl is a vibrant and nutritious meal packed with plant-based protein.
           It features crispy tofu, creamy avocado, and a mix of fresh vegetables like edamame, kale, and carrots.
