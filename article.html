@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="navbar-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
+
+    <style>
+        .btn-more{
+            background-color:#468d62;
+            color: white;
+            padding: 0.375rem 1.5rem;
+            font-size: 0.875rem;
+            border-radius: 0.375rem;
+            border: none;
+            width:15rem;
+
+        }
+        .btn-more:hover{
+            background-color:#3F7D58;
+            color: white;
+        }
+        
+        .card-title{
+            font-family: 'Cormorant Infant', serif !important;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .shadow-lg {
+            box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+        }
+    </style>
+</head>
+<body>
+<!--Navbar-->
+    <div class="wrapper" style="background-color: #EFEFEF;">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button id="toggle-btn" type="button">
+                    <i id="toggle-icon" class="material-icons">menu</i>
+                </button>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="profile.php" class="sidebar-link"  data-page="profile">
+                        <i class="material-icons">person</i>
+                        <span class="material-symbols">Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="home.php" class="sidebar-link">
+                        <i class="material-icons">home</i>
+                        <span class="material-symbols">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="article.html" class="sidebar-link">
+                        <i class="material-icons">description</i>
+                        <span class="material-symbols">Article</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="material-icons">search</i>
+                        <span class="material-symbols">Explore</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="material-icons">bookmarks</i>
+                        <span class="material-symbols">Bookmarks</span>
+                    </a>
+                </li>
+                <li class="sidebar-item mt-3">
+                    <a href="add_resep.html" class="sidebar-link">
+                        <i class="material-icons">add</i>
+                        <span class="material-symbols">Add</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer mt-5">
+                <a href="landing.html" class="sidebar-link">
+                    <i class="material-icons">logout</i>
+                    <span class="material-symbols">logout</span>
+                </a>
+            </div>
+        </aside>
+        
+        <div class="main p-5 pt-0 pe-0" style="background-color: #EFEFEF;">
+            <div class="text-left">
+                <img src="images/apel-header.png" alt="apel" style="max-height:10rem; width:100%; object-fit:cover; border-bottom-left-radius: 2rem;">
+                <h1 class="py-3 col-1 m-0" style="font-weight: bold; font-size: 37px;">Article</h1>
+                
+                <!-- Main Card-->
+                <div class="mb-5">
+                    <div class="card border-0 shadow-lg rounded-5 bg-body-tertiary" style="width:96%; height: 12rem;">
+                        <div class="row g-0 h-100">
+                            <!-- Text -->
+                            <div class="col-9">
+                                <div class="card-body d-flex flex-column h-100 p-4">
+                                    <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+                                        <a href="Article_sample.html" style="text-decoration:none">
+                                            <h5 class="card-title mb-2" style="color:black; flex-shrink: 0; font-size: 30px;">5 Nutrition Myths Debunked</h5>
+                                        </a>
+                                        <p class="card-text mb-0" style="flex: 1;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.4em; max-height: 2.8em;">Among the sea of information regarding nutrition is a tide of inaccuracies. Let's debunk a few common myths so you can feel more confident about your food choices.</p>
+                                        <!-- prev -->
+                                    </div>
+                                    <div style="flex-shrink: 0; margin-top: 0.5rem;">
+                                        <a href="Article_sample.html" class="btn btn-more rounded-3 shadow-sm">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Picture -->
+                            <div class="col-3 p-0">
+                                <img src="images/veg-money.png" alt="kimchi" class="img-fluid rounded-end-5 " style="height: 12rem; width:100%; object-fit:cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 column cards -->
+                <div class="row row-cols-1 row-cols-md-3 gx-4" style="width: 98%;">
+                    <!--card 1-->
+                    <div class="col">
+                        <div class="card border-0 h-100 shadow-lg rounded-5 bg-body-tertiary">
+                            <!--Image-->
+                            <img src="images/kimchi.png" class="card-img-top rounded-top-5" alt="veg-money" style="height: 10rem; width:100%; object-fit:cover; object-position: 0% 80%;">
+                            <div class="card-body">
+                                <!-- EDIT EDIT EDIT -->
+                                <a href="#" style="text-decoration:none">
+                                    <h5 class="card-title" style="color:black;">Health benefits of kimchi as a probiotic food</h5>
+                                </a>
+                                <p class="card-text mb-0" style="font-size:15px; flex: 1;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.4em; max-height: 2.8em;">Kimchi is a traditional Korean food manufactured by fermenting vegetables with probiotic lactic acid bacteria (LAB). Many bacteria are involved in the fermentation of kimchi, but LAB become dominant while the putrefactive bacteria.... </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="col">
+                        <div class="card border-0 h-100 shadow-lg rounded-5 bg-body-tertiary">
+                            <!--Image-->
+                            <img src="images/juice.png" class="card-img-top rounded-top-5" alt="veg-money" style="height: 10rem; width:100%; object-fit:cover;">
+                            <div class="card-body">
+                                <!-- EDIT EDIT EDIT -->
+                                <a href="#" style="text-decoration:none">
+                                    <h5 class="card-title" style="color:black;">Foods Linked To Better Brain</h5>
+                                </a>
+                                <p class="card-text mb-0" style="font-size:15px; flex: 1;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.4em; max-height: 2.8em;">Nutritionists emphasize that the most important strategy is to follow a healthy dietary pattern that ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card 3-->
+                    <div class="col">
+                        <div class="card border-0 h-100 shadow-lg rounded-5 bg-body-tertiary">
+                            <!--Image-->
+                            <img src="images/veg-food.png" class="card-img-top rounded-top-5" alt="veg-money" style="height: 10rem; width:100%; object-fit:cover;">
+                            <div class="card-body">
+                                <!-- EDIT EDIT EDIT -->
+                                <a href="#" style="text-decoration:none">
+                                    <h5 class="card-title" style="color:black;">Fact about vegetarian diet</h5>
+                                </a>
+                                <p class="card-text mb-0" style="font-size:15px;flex: 1;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.4em; max-height: 2.8em;">A person does not have to eat meat to get all the nutrients they need for good health. A meat-free diet...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section id="footer">
+    <div class="container-fluid p-0">
+        <footer class="p-5 text-white" style="background-color: #3F7D58;">
+        <div class="row text-center text-md-start px-3">
+            <div class="col-md-2">
+            <h6 class="fw-bold">LINKS</h6>
+            <ul class="list-unstyled">
+                <li class="py-1"><a href="login.php" class="text-white text-decoration-none">Recipes</a></li>
+                <li class="py-1"><a href="login.php" class="text-white text-decoration-none">Articles</a></li>
+                <li class="py-1"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            </ul>
+            </div>
+    
+            <div class="col-md-3">
+                <h6 class="fw-bold">CONTACT US</h6>
+                <p class="mb-1">+6281234567890</p>
+                <p>veggievibes@gmail.com</p>
+            </div>
+    
+            <div class="col-md-3">
+            <h6 class="fw-bold">FOLLOW US</h6>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                <a href="https://facebook.com" target="_blank"><img src="images/fb.png"></img></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/ig.png"></img></a>
+                <a href="https://pinterest.com" target="_blank"><img src="images/pin.png"></img></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/yt.png"></img></a>
+                <a href="https://x.com" target="_blank"><img src="images/x.png"></img></a>
+            </div>
+            </div>
+    
+            <div class="col-md-4 text-md-end" style="margin-top: -0.75rem;">
+                <div>
+                    <img src="images/veggievibes.png" alt="Veggie Vibes Logo" style="width: 3rem; height: 3rem; margin-bottom: 0.5rem;"/>
+                    <span class="fs-2 fw-bold" style="font-family: 'Cormorant Infant', sans-serif;">Veggie Vibes</span>
+                </div>
+                <p class="small">
+                    Veggie Vibes is a website that shares simple, healthy recipes to support balanced living.
+                    We aim to make nutritious eating easy and accessible for everyone.
+                </p>
+            </div>
+        </div>
+            <hr class="border-white border-2"/>
+            <div class="text-center small mt-3">
+            &copy; 2025 Brand. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    </section>
+<script src="navbar-script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
