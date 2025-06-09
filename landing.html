@@ -15,20 +15,19 @@
         #hero{
             background-image: url("images/bglanding1.png");
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: 100% 95%;
             min-height: 100vh;
         }
         #about{
             font-family: 'Cormorant Infant', serif;
             background-image: url("images/bglanding2.png");
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-size: 100%;
             min-height: 100vh;
         }
         html {
             scroll-behavior: smooth;
         }
-        
         @media (max-width: 768px) {
             #footer .row > div {
                 text-align: center !important;
@@ -56,12 +55,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav mx-auto me-5 gap-5">
             <div><a class="nav-link text-white" href="#about">ABOUT US</a></div>
-            <div><a class="nav-link text-white" href="/login">ARTICLES</a></div>
-            <div><a class="nav-link text-white" href="/login">RECIPES</a></div>
+            <div><a class="nav-link text-white" href="login.php">ARTICLES</a></div>
+            <div><a class="nav-link text-white" href="login.php">RECIPES</a></div>
             <div><a class="nav-link text-white pe-5" href="#footer">CONTACT</a></div>
         </div>
         <div class="navbar-nav ms-auto">
-            <a href="/login" class="px-3">
+            <a href="login.php" class="px-3">
                 <img src="images/guest.png" style="width: 2.5rem; height: 2.5rem;">
             </a>
         </div>
@@ -80,7 +79,7 @@
             and support you can count on.
             </p>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
             <img src="images/landing1.png" class="w-100 mt-3 ms-5">
         </div>
     </div>
@@ -116,8 +115,8 @@
         <div class="col-md-2">
         <h6 class="fw-bold">LINKS</h6>
         <ul class="list-unstyled">
-            <li class="py-1"><a href="/login" class="text-white text-decoration-none">Recipes</a></li>
-            <li class="py-1"><a href="/login" class="text-white text-decoration-none">Articles</a></li>
+            <li class="py-1"><a href="login.php" class="text-white text-decoration-none">Recipes</a></li>
+            <li class="py-1"><a href="login.php" class="text-white text-decoration-none">Articles</a></li>
             <li class="py-1"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
         </ul>
         </div>
