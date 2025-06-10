@@ -125,13 +125,13 @@ if (!$email && $username) {
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="navbar/explore.html" class="sidebar-link">
                     <i class="material-icons">search</i>
                     <span class="material-symbols">Explore</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="bookmark.html" class="sidebar-link">
                     <i class="material-icons">bookmarks</i>
                     <span class="material-symbols">Bookmarks</span>
                 </a>
@@ -146,7 +146,7 @@ if (!$email && $username) {
         <div class="sidebar-footer mt-5">
             <a href="landing.html" class="sidebar-link">
                 <i class="material-icons">logout</i>
-                <span class="material-symbols">logout</span>
+                <span class="material-symbols">Logout</span>
             </a>
         </div>
     </aside>

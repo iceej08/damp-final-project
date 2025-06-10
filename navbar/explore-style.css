@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.main{
+    flex: 1;
+    padding: 2rem;
+    transition: margin-left 0.3s ease;
+    background-color: #ffffff;
+    margin-left: 5rem;
+    padding: 2rem;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100vh;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--green);
+    border-radius: 0 0.7rem 0.7rem 0;
+    overflow-x: hidden;
+}
+#sidebar.expand{
+    width: 13rem;
+}
+#sidebar.expand~.main{
+  margin-left: 13rem;
+}
+#toggle-btn{
+    background-color: transparent !important;
+    cursor: pointer;
+    border: 0;
+    padding: 1.7rem 1.5rem;
+}
+
+#toggle-btn i{
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.5s;
+}
+.sidebar-logo{
+    margin: auto 0;
+}
+.sidebar-logo a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#sidebar:not(.expand) .sidebar-logo, 
+#sidebar:not(.expand) a.sidebar-link span{
+    display: none;
+}
+
+.sidebar-nav{
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link{
+    padding: 0.625rem 1.6rem;
+    color: #fff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 0.2rem solid transparent;
+    transition: background-color 0.3s;
+}
+
+.sidebar-link i{
+    font-size: 1.2rem;
+    margin-right: .75rem;
+}
+.sidebar-link span{
+    display: inline-block;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+#sidebar.expand .sidebar-link span {
+  text-decoration: none;
+}
+a.sidebar-link:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+    border-left: 0.2rem solid#B8DFC8;
+}
+.sidebar-link:hover{
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.sidebar-link.active {
+    background-color: #B8DFC8;
+    color: #3F7D58;
+    font-weight: 600;
+}
+#sidebar:not(.expand) .sidebar-item:hover {
+    display: block;
+    margin: auto;
+    width: 100%;
+    opacity: 1;
+}
+#sidebar:not(.expand) a.sidebar-link span {
+  display: none;
+}
+#sidebar:not(.expand) .sidebar-link:hover {
+  background-color: transparent;
+}
+
+/* Footer logout */
+.sidebar-footer {
+    padding: auto 1.5rem;
+    margin-top: auto;
+    display: block;
+}
+
+/* MULAI HEADER */
+.hero-header { 
+    background-image: url("../images/searchbar.png");
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 90rem;
+    height: 14rem;
+    border-radius: 2rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 20;
+  padding: 2rem;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+}
+
+.hero-overlay #search-bar {
+  align-self: center;
+  width: 55%;
+  font-size: 1.25rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* buat search bar only */
+:root {
+    --blue: #9ab3f5;
+    --purple: #9a1663;
+    --white: #ffffff;
+    --green: #3F7D58;
+  --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 68%;
+  max-width: 68rem;
+  border-radius: 3rem;
+  z-index: 30;
+  background-color: #fff;
+  justify-content: center;
+  /* padding: 0.1rem 0.2rem; */
+}
+
+.dropdown {
+  position: relative;
+  margin-top: none !important;
+  width: 17em;
+  border-radius: 2rem;
+  background-color: var(--green);
+  border: 0.125rem solid var(--white);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.dropdown-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  color: var(--white);
+}
+
+.dropdown-list {
+  position: absolute;
+  width: 90%;
+  top: 100%;
+  z-index: 1000;
+  top: 4rem;
+  left: 0;
+  border-radius: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--white);
+  color: var(--green);
+  transition: max-height 0.5s ease-in-out;
+}
+.dropdown-list.show {
+  max-height: 15rem;
+}
+
+.dropdown-list-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 1rem 0 1rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.3s ease, margin-left 0.2s ease;
+}
+
+.dropdown-list-item:hover {
+  margin-left: 0.5rem;
+  color: var(--green);
+}
+
+#list.show {
+  max-height: 300px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 1rem;
+  width: 100%;
+  max-width: 35rem;
+  color: var(--green);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--green);
+  border: 0;
+  outline: 0;
+}
+
+.search-box i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  color: var(--green);
+}
+
+.search-box input::placeholder {
+  color: var(--green);
+}
+
+.card {
+  border: none;
+  border-radius: 2rem !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 13rem; /* 260px / 16 */
+  object-fit: cover;
+  border-top-left-radius: 2rem !important;
+  border-top-right-radius: 2rem !important;
+}
+
+.card-title {
+  font-family: "Cormorant Infant", serif !important;
+  font-size: 1.5rem; /* 40px / 16 */
+  font-weight: 800;
+  margin-bottom: none !important;
+}
+.card-text{
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.bookmark-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.bookmark-icon.saved {
+  color: #3F7D58; /* Green jika disimpan */
+  background-color: rgba(255, 255, 255, 0.7);
+}
